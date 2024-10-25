@@ -1408,4 +1408,24 @@ form label {
     background: #fff;
 }
 
-/* linha 1256, página 106 */
+.gtco-nav-toggle.gtco-nav-toggle-white > i::before, .gtco-nav-toggle.gtco-nav-white > i::after {
+    background: #fff;
+}
+
+.gtco-nav-toggle i::before {
+    top: -7px;
+}
+
+.gtco-nav-toggle:hover i::after {
+    bottom: -7px;
+}
+
+.gtco-nav-toggle i::before {
+    top: -10px;
+}
+
+.gtco-nav-toggle:hover i::after {
+    bottom: -10px;
+}
+
+/* linha 1276, página 107 */
