@@ -1,7 +1,9 @@
 var conn = require('./db')
 
 module.exports = {
+
     render(req, res, error, success) {
+        
         res.render('reservations', {
             title: 'Reservas - Restaurante Saboroso!',
             background: "images/img_bg_2.jpg",
@@ -21,7 +23,7 @@ module.exports = {
             
             conn.query(`
                 INSERT INTO tb_reservations (name, email, people, date, time)
-                VALUES(? , ?, ?, ?, ?)
+                VALUES(?, ?, ?, ?, ?)
                 `, [
                     fields.name,
                     fields.email,
